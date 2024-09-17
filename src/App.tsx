@@ -3,11 +3,6 @@ import Card from "./components/Card";
 import "./App.css"; // Custom CSS file
 import VanillaTilt from "vanilla-tilt";
 
-// Import local images
-import image1 from "/img/image1.jpeg";
-import image2 from "./img/image2.jpeg";
-import image3 from "./assets/img/image3.jpeg";
-
 const App: React.FC = () => {
   useEffect(() => {
     const elements = document.querySelectorAll(
