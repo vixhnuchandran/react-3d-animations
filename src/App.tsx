@@ -4,8 +4,8 @@ import "./App.css"; // Custom CSS file
 import VanillaTilt from "vanilla-tilt";
 
 // Import local images
-import image1 from "./assets/img/image1.jpeg";
-import image2 from "./assets/img/image2.jpeg";
+import image1 from "/img/image1.jpeg";
+import image2 from "./img/image2.jpeg";
 import image3 from "./assets/img/image3.jpeg";
 
 const App: React.FC = () => {
@@ -26,17 +26,17 @@ const App: React.FC = () => {
     <main className="flex justify-center items-center h-screen bg-teal-500">
       <section className="flex flex-wrap justify-center">
         <Card
-          imageUrl={image1}
+          imageUrl="/img/image1.jpeg"
           category="Category"
           heading="Example Card Heading 1"
         />
         <Card
-          imageUrl={image2}
+          imageUrl="/img/image2.jpeg"
           category="Category"
           heading="Example Card Heading 2"
         />
         <Card
-          imageUrl={image3}
+          imageUrl="/img/image3.jpeg"
           category="Category"
           heading="Example Card Heading 3"
         />
