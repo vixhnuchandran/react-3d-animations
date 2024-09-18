@@ -4,6 +4,7 @@
   gap: 5px;
   width: 100%;
   max-width: 500px;
+  height: 800px;
   padding: 10px;
 }
 
@@ -15,7 +16,7 @@
 .slot {
   background: #111;
   flex: 1;
-  overflow: hidden; /* Prevent overflow */
+  overflow: hidden;
 }
 
 .slot.a {
@@ -25,7 +26,7 @@
 
 .slot.b {
   flex: 2;
-  height: 100px; /* Ensure consistent height */
+  height: 100px;
 }
 
 .second-row {
@@ -44,17 +45,17 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 20px; /* Adjust font size for large content */
+  font-size: 20px;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
   position: relative;
-  overflow: hidden; /* Ensure no overflow in items */
+  overflow: hidden;
 }
 
 .item.a {
   background: #b95050;
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
 }
 
 .item.b {
