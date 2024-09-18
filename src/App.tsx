@@ -69,7 +69,7 @@ function App() {
     <div className=" flex flex-wrap justify-center mt-20  gap-20">
       <div className="container ">
         <p className="flex justify-center text-5xl font-bold text-gray-600 p-4  rounded-lg shadow-lg">
-          Swappy
+          Swapy
         </p>
         <div className="slot a" data-swapy-slot="1">
           {getItemById(slotItems["1"])}
