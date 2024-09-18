@@ -1,24 +1,41 @@
-import React from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { Atropos } from "atropos/react";
 
 interface CardProps {
-  imageUrl: string;
-  category: string;
-  heading: string;
+  bg: any;
+  title: string;
+  subtitle: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageUrl, category, heading }) => {
+export const Card = ({ bg, title, subtitle }: CardProps) => {
   return (
-    <a
-      href="#"
-      className="bg-teal-500 relative w-[280px] h-[400px] shadow-lg rounded-lg m-8 bg-cover bg-center overflow-hidden inline-block"
-      style={{ backgroundImage: `url(${imageUrl})` }}
-    >
-      <div className="absolute top-6 left-6 text-white">
-        <p className="text-xs uppercase mb-2">{category}</p>
-        <h3 className="text-2xl leading-tight">{heading}</h3>
-      </div>
-    </a>
+    <div className="w-64 m-6">
+      <Atropos
+        className="game-box"
+        rotateTouch="scroll-y"
+        rotateXMax={24}
+        rotateYMax={24}
+      >
+        <span className="game-box-t" />
+        <span className="game-box-r" />
+        <span className="game-box-b" />
+        <span className="game-box-l" />
+
+        {/* <img className="game-box-size" src="/box-size.svg" alt="box bg" /> */}
+        <img
+          className="game-box-bg"
+          data-atropos-offset="-4"
+          src={`${bg}`}
+          alt="game cover"
+        />
+        <h1 className="game-box-logo" data-atropos-offset="2.5">
+          {title}
+        </h1>
+        <h3 className="game-box-logo" data-atropos-offset="2.5">
+          {subtitle}
+        </h3>
+      </Atropos>
+    </div>
   );
 };
-
-export default Card;
