@@ -86,6 +86,8 @@ function App() {
           {getItemById(slotItems["4"])}
         </div>
       </div>
+      <div></div>
+
       <div className="App">
         <div className=" flex flex-wrap justify-center">
           <Card bg="/image1.jpeg" title="Title1" subtitle="Subtitle1" />
