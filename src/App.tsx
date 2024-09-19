@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import "./App.css";
 import DraggableLayout from "react-draggable-layout";
-import { Card } from "./components/Card";
 import "atropos/css";
+import AtroposComponent from "./components/Atropos";
+import CardComponent from "./components/CardAtrpos";
 
 export default function App() {
   const components = [
@@ -104,7 +105,7 @@ export default function App() {
   };
 
   return (
-    <div className="h-screen bg-gray-100">
+    <div className="h-screen ">
       <h1 className="text-4xl font-bold text-black text-center mt-8 mb-6">
         React Draggable Layout
       </h1>
@@ -115,17 +116,42 @@ export default function App() {
         onChange={handleOnChange}
         draggable={true}
       />
+      <div>
+        <AtroposComponent />
+      </div>
 
-      <div className="App mb-56">
-        <h1 className="text-4xl font-bold text-black text-center mt-8 mb-6">
-          Atropos JS
+      <div className="App-header flex justify-center">
+        <h1 className="text-4xl font-bold text-center text-white mb-8">
+          3D Card Example
         </h1>
-        <div className="mt-8 flex flex-wrap justify-center">
-          <Card bg="/image1.jpeg" title="Title1" subtitle="Subtitle1" />
-          <Card bg="/image2.jpeg" title="Title2" subtitle="Subtitle2" />
-          <Card bg="/image3.jpeg" title="Title3" subtitle="Subtitle3 " />
-          <Card bg="/image4.jpeg" title="Title4" subtitle="Subtitle4" />
-        </div>
+        <CardComponent
+          title="Awesome Card"
+          subtitle="Subtitle Here"
+          backgroundImage="/image1.jpeg"
+          width="300px"
+          height="400px"
+        />
+        <CardComponent
+          title="Another Card"
+          subtitle="Another Subtitle"
+          backgroundImage="/image2.jpeg"
+          width="350px"
+          height="450px"
+        />
+        <CardComponent
+          title="Another Card"
+          subtitle="Another Subtitle"
+          backgroundImage="/image3.jpeg"
+          width="350px"
+          height="450px"
+        />
+        <CardComponent
+          title="Another Card"
+          subtitle="Another Subtitle"
+          backgroundImage="/image4.jpeg"
+          width="350px"
+          height="450px"
+        />
       </div>
     </div>
   );

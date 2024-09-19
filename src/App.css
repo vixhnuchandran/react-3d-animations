@@ -111,3 +111,179 @@
     top: 9px;
   }
 }
+
+.my-atropos {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  margin: 2rem auto 0 auto;
+}
+.atropos-inner,
+.atropos-scale,
+.atropos-rotate,
+.mk-card {
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+.my-atropos:hover .flame {
+  opacity: 1;
+}
+.flame {
+  opacity: 0;
+  background: url("../img/sparkles.gif");
+  z-index: 1;
+  mix-blend-mode: lighten;
+  filter: brightness(0.7);
+  transition: opacity 0.25s ease-in-out;
+}
+.mk-card {
+  background: url("/mk-bg.png");
+}
+.mk-card,
+.flame {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1.5rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mk-card .mk-title {
+  position: absolute;
+  width: 50%;
+  display: grid;
+  width: 50%;
+  padding: 5.5rem 0 0 3rem;
+  border-radius: inherit;
+}
+.mk-card > .mk-title > * {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.mk-card img {
+  margin: 0 auto;
+}
+.mk-card img:nth-child(1) {
+  height: 130px;
+}
+.mk-card img:nth-child(2),
+.mk-card img:nth-child(3) {
+  height: 60px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+  .my-atropos {
+    width: 90% !important;
+    height: 250px !important;
+  }
+  .mk-card img:nth-child(1) {
+    height: 60px !important;
+  }
+  .mk-card img:nth-child(2),
+  .mk-card img:nth-child(3) {
+    height: 27px !important;
+  }
+  .mk-card > .mk-title > * {
+    margin-bottom: 0.75rem !important;
+  }
+  .mk-card .mk-title {
+    padding: 3rem 0 0 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-atropos {
+    width: 90%;
+    height: 350px;
+  }
+  .mk-card img:nth-child(1) {
+    height: 80px;
+  }
+  .mk-card img:nth-child(2),
+  .mk-card img:nth-child(3) {
+    height: 40px;
+  }
+  .mk-card > .mk-title > * {
+    margin-bottom: 1rem;
+  }
+  .mk-card .mk-title {
+    padding: 4.5rem 0 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-atropos {
+    width: 800px;
+    height: 500px;
+  }
+  .mk-card img:nth-child(1) {
+    height: 130px;
+  }
+  .mk-card img:nth-child(2),
+  .mk-card img:nth-child(3) {
+    height: 60px;
+  }
+  .mk-card .mk-title {
+    padding: 5.5rem 0 0 3rem;
+  }
+  .mk-card > .mk-title > * {
+    margin-bottom: 2rem;
+  }
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flame {
+  opacity: 0;
+  background: url("/path-to-sparkles.gif");
+  z-index: 1;
+  mix-blend-mode: lighten;
+  filter: brightness(0.7);
+  transition: opacity 0.25s ease-in-out;
+}
+
+.card-content {
+  position: absolute;
+  width: 90%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card-content h3 {
+  color: #d1d5db;
+}
+
+@media (max-width: 640px) {
+  .my-atropos {
+    width: 90% !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-atropos {
+    width: 80% !important;
+    height: 350px !important;
+  }
+}
