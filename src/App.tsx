@@ -125,29 +125,29 @@ export default function App() {
           3D Card Example
         </h1>
         <CardComponent
-          title="Awesome Card"
-          subtitle="Subtitle Here"
+          title="Innovate 2024"
+          subtitle="Join us for an immersive experience showcasing the latest breakthroughs in technology and innovation."
           backgroundImage="/image1.jpeg"
           width="300px"
           height="400px"
         />
         <CardComponent
-          title="Another Card"
-          subtitle="Another Subtitle"
+          title="Summer Beats Festival"
+          subtitle="Experience the ultimate music festival this summer with top artists from around the world."
           backgroundImage="/image2.jpeg"
           width="350px"
           height="450px"
         />
         <CardComponent
-          title="Another Card"
-          subtitle="Another Subtitle"
+          title="Art in Focus"
+          subtitle="Explore the diverse and captivating world of contemporary art."
           backgroundImage="/image3.jpeg"
           width="350px"
           height="450px"
         />
         <CardComponent
-          title="Another Card"
-          subtitle="Another Subtitle"
+          title="Gourmet Cooking Masterclass"
+          subtitle="Learn the art of gourmet cooking from top chefs in this exclusive masterclass."
           backgroundImage="/image4.jpeg"
           width="350px"
           height="450px"

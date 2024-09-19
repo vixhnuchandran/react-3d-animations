@@ -33,7 +33,6 @@ const CardComponent: React.FC<CardComponentProps> = ({
         <div className="atropos-scale">
           <div className="atropos-rotate">
             <div className="atropos-inner relative">
-              {/* Flame effect */}
               <div
                 className="flame absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out"
                 data-atropos-offset="-10"
@@ -45,11 +44,17 @@ const CardComponent: React.FC<CardComponentProps> = ({
                   backgroundImage: `url(${backgroundImage})`,
                 }}
               >
-                <div className="card-content text-center">
-                  <h2 className="text-2xl font-bold text-white mb-2">
+                <div className="card-content text-center space-y-4">
+                  <h2
+                    className="text-4xl font-extrabold text-white mb-4 drop-shadow-md"
+                    data-atropos-offset="10"
+                  >
                     {title}
                   </h2>
-                  <h3 className="text-lg font-semibold text-gray-200">
+                  <h3
+                    className="text-xl font-semibold text-gray-300 drop-shadow-sm"
+                    data-atropos-offset="15"
+                  >
                     {subtitle}
                   </h3>
                 </div>
