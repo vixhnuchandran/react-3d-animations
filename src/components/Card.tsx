@@ -29,10 +29,10 @@ export const Card = ({ bg, title, subtitle }: CardProps) => {
           src={`${bg}`}
           alt="game cover"
         />
-        <h1 className="game-box-logo" data-atropos-offset="2.5">
+        <h1 className="game-box-logo" data-atropos-offset="10">
           {title}
         </h1>
-        <h3 className="game-box-logo" data-atropos-offset="2.5">
+        <h3 className="game-box-logo" data-atropos-offset="15">
           {subtitle}
         </h3>
       </Atropos>
